@@ -25,6 +25,7 @@ public class BuildTower : MonoBehaviour {
 		if (Input.GetMouseButtonDown (0)) {
 			GameObject newTower = Instantiate(tower, hit.point, Quaternion.identity) as GameObject;
 			newTower.GetComponent<BuildTower>().tower = newTower;
+			GetComponent<TowerShooting>().enabled = true;
 			Destroy(this);
 		}
 	}
