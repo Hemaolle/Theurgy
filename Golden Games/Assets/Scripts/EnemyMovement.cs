@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyMovement : MonoBehaviour {
 
 	public float speed = 1;
-	public Transform[] cameraPoints;
+	public Transform[] path;
 	public float startingDelay = 1;
 	Vector3 direction;
 	int pointNumber;
@@ -13,7 +13,7 @@ public class EnemyMovement : MonoBehaviour {
 	
 	void Start () {
 		Invoke ("StartMoving", startingDelay);
-		transform.position = cameraPoints [0].position;
+		transform.position = path [0].position;
 	}
 	
 	void StartMoving () {
@@ -30,17 +30,17 @@ public class EnemyMovement : MonoBehaviour {
 		
 		if (moving == true) {
 			// kun saavutetaan viimeinen piste, pysäytetään kamera
-			if (Vector3.Distance(transform.position, cameraPoints[cameraPoints.Length - 1].position) <= sensitivity) {
+			if (Vector3.Distance(transform.position, path[path.Length - 1].position) <= sensitivity) {
 				Destroy(this);
 				return;
 			}
 			
 			//etsitään vektorien välinen suunta kun ollaan tarpeeksi lähellä seuraavaa käännöspistettä
-			if (Vector3.Distance(transform.position, cameraPoints[pointNumber].position) <= sensitivity) {
-				direction = cameraPoints[pointNumber+1].position - cameraPoints[pointNumber].position;
+			if (Vector3.Distance(transform.position, path[pointNumber].position) <= sensitivity) {
+				direction = path[pointNumber+1].position - path[pointNumber].position;
 				direction.Normalize();
 				pointNumber++;
-				transform.LookAt(cameraPoints[pointNumber], Vector3.up);
+				transform.LookAt(path[pointNumber], Vector3.up);
 			}
 			
 			//liikutaan haluttuun suuntaan
