@@ -4,6 +4,7 @@ using System.Collections;
 public class TowerShooting : MonoBehaviour {
 
 	public GameObject bullet;
+	public GameObject shootingPosition;
 
 	public float shootInterval;
 
@@ -18,7 +19,7 @@ public class TowerShooting : MonoBehaviour {
 	}
 
 	void Shoot() {
-		GameObject newBullet = Instantiate (bullet, transform.position, Quaternion.identity) as GameObject;
+		GameObject newBullet = Instantiate (bullet, shootingPosition.transform.position, Quaternion.identity) as GameObject;
 		newBullet.GetComponent<Projectile> ().target = GameObject.FindWithTag ("Enemy");
 	}
 }
