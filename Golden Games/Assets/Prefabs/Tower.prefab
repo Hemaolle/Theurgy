@@ -143,7 +143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 163444, guid: 7a949c7eb0232e049b834d07309d6422, type: 2}
-  shootingPosition: {fileID: 0}
+  shootingPosition: {fileID: 169512}
   shootInterval: .5
 --- !u!114 &11487488
 MonoBehaviour:
