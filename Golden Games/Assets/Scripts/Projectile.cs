@@ -4,7 +4,7 @@ using System.Collections;
 public class Projectile : MonoBehaviour {
 
 	public GameObject target;
-
+	public float damage = 1;
 	public float speed = 5;
 
 	// Use this for initialization
@@ -21,7 +21,9 @@ public class Projectile : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		Debug.Log (collider.name);
-		if (collider.tag == "Enemy")
+		if (collider.tag == "Enemy") {
+			collider.GetComponentInParent<EnemyHealth>().TakeDamage(damage);
 			Destroy (gameObject);
+		}
 	}
 }
