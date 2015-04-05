@@ -17,7 +17,7 @@ public class BuildTower : MonoBehaviour {
 	void Update () {
 		int groundLayermask = 1 << LayerMask.NameToLayer ("Ground");
 
-		Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+		Ray ray = MainCamera.Get().GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
 		if (Physics.Raycast (ray, out hit, Mathf.Infinity, groundLayermask)) { //&& Input.GetMouseButtonDown (0) && hit.transform.name == "Play"
 			tower.transform.position = hit.point;
 		}
