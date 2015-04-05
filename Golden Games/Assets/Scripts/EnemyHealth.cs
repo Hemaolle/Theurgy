@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	public float maxHealth = 10;
 	public Slider healthSlider;
+	public int killPrice;
 
 	float currentHealth;
 
@@ -24,6 +25,7 @@ public class EnemyHealth : MonoBehaviour {
 		currentHealth -= damage;
 		healthSlider.value = currentHealth / maxHealth;
 		if (currentHealth <= 0) {
+			Resources.ChangeGoldAmount(killPrice);
 			Destroy (gameObject);
 		}
 	}
