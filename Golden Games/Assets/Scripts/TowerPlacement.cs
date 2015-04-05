@@ -3,6 +3,8 @@ using System.Collections;
 
 public class TowerPlacement : MonoBehaviour {
 
+	public int price;
+
 	// Use this for initialization
 	void Start () {
 		PlaceAtMousePosition ();
@@ -14,6 +16,7 @@ public class TowerPlacement : MonoBehaviour {
 		PlaceAtMousePosition ();
 		if (Input.GetMouseButtonDown (0)) {
 			GetComponent<TowerShooting>().enabled = true;
+			Resources.ChangeGoldAmount(-price);
 			Destroy(this);
 		}
 	}
