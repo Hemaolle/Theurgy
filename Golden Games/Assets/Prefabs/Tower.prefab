@@ -145,6 +145,7 @@ MonoBehaviour:
   bullet: {fileID: 163444, guid: 7a949c7eb0232e049b834d07309d6422, type: 2}
   shootingPosition: {fileID: 169512}
   shootInterval: .5
+  maxRange: 4
 --- !u!114 &11487488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -153,10 +154,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 155064}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 247bf6e71d1880442b7f3627798cbdb4, type: 3}
+  m_Script: {fileID: 11500000, guid: adac0cb9eb842ba49bbb3a7a43226a04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tower: {fileID: 155064}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

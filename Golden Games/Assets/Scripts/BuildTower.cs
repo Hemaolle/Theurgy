@@ -5,28 +5,9 @@ public class BuildTower : MonoBehaviour {
 
 	public GameObject tower;
 
-
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-
-	private RaycastHit hit;  
-
-	void Update () {
-		int groundLayermask = 1 << LayerMask.NameToLayer ("Ground");
-
-		Ray ray = MainCamera.Get().GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-		if (Physics.Raycast (ray, out hit, Mathf.Infinity, groundLayermask)) { //&& Input.GetMouseButtonDown (0) && hit.transform.name == "Play"
-			tower.transform.position = hit.point;
-		}
-
-		if (Input.GetMouseButtonDown (0)) {
-			GameObject newTower = Instantiate(tower, hit.point, Quaternion.identity) as GameObject;
-			newTower.GetComponent<BuildTower>().tower = newTower;
-			GetComponent<TowerShooting>().enabled = true;
-			Destroy(this);
-		}
+	public void Build() {
+		Instantiate(tower, Vector3.zero, Quaternion.identity);
+		//GameObject newTower = Instantiate(tower, Vector3.zero, Quaternion.identity) as GameObject;
+		//newTower.GetComponent<TowerPlacement>().tower = newTower;
 	}
 }
