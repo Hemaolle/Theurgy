@@ -284,11 +284,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 181790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d681b3b9e9462e4ca57b819cbf138f3, type: 3}
+  m_Script: {fileID: 11500000, guid: 278c9e2847b512043b9ea85cd59ea5fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HpBar: {fileID: 156474}
-  HpBarLocation: {fileID: 129752}
+  UIElement: {fileID: 156474}
+  WorldLocation: {fileID: 129752}
 --- !u!114 &11434908
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,6 +323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 10
   healthSlider: {fileID: 11467446}
+  killPrice: 20
 --- !u!114 &11459952
 MonoBehaviour:
   m_ObjectHideFlags: 1
