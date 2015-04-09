@@ -15,6 +15,7 @@ public class EnemyMovement : MonoBehaviour {
 	}
 
 	void RotateToNextDirection() {
+
 		Quaternion newRotation = Quaternion.LookRotation (path [pointNumber + 1].position - path [pointNumber].position, Vector3.up);
 		Vector3 newRotationEuler = newRotation.eulerAngles;
 		iTween.RotateTo(gameObject, iTween.Hash("x", newRotationEuler.x,
@@ -27,7 +28,10 @@ public class EnemyMovement : MonoBehaviour {
 
 	void MoveToNextPoint() {
 		pointNumber++;
-		if (pointNumber < path.Length) {
+		if (pointNumber == path.Length - 1) {
+			DamageCore();
+		}
+		if (pointNumber < path.Length - 1) {
 			iTween.MoveTo (gameObject, iTween.Hash ("x", path [pointNumber].position.x,
 		                                      "y", path [pointNumber].position.y,
 		                                      "z", path [pointNumber].position.z,
@@ -35,5 +39,9 @@ public class EnemyMovement : MonoBehaviour {
 		                                      "easetype", iTween.EaseType.linear,
 		                                      "oncomplete", "RotateToNextDirection"));
 		}
+	}
+
+	void DamageCore() {
+		CoreHealthbar.Get ().GetComponent<EnemyHealth> ().TakeDamage (1);
 	}
 }

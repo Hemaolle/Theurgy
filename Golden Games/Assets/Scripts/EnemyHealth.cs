@@ -25,8 +25,12 @@ public class EnemyHealth : MonoBehaviour {
 		currentHealth -= damage;
 		healthSlider.value = currentHealth / maxHealth;
 		if (currentHealth <= 0) {
-			Resources.ChangeGoldAmount(killPrice);
-			Destroy (gameObject);
+			Death();
 		}
+	}
+
+	protected virtual void Death() {
+		Resources.ChangeGoldAmount(killPrice);
+		Destroy (gameObject);
 	}
 }
