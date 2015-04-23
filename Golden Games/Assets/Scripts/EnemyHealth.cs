@@ -7,6 +7,7 @@ public class EnemyHealth : MonoBehaviour {
 	public float maxHealth = 10;
 	public Slider healthSlider;
 	public int killPrice;
+	public GameObject enemyDeathParticle;
 
 	float currentHealth;
 
@@ -31,6 +32,7 @@ public class EnemyHealth : MonoBehaviour {
 
 	protected virtual void Death() {
 		Resources.ChangeGoldAmount(killPrice);
+		Instantiate (enemyDeathParticle, transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
 		Destroy (gameObject);
 	}
 }

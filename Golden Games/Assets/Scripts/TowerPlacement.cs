@@ -27,6 +27,9 @@ public class TowerPlacement : MonoBehaviour {
 
 		if (placementPossible && Input.GetMouseButtonDown (0)) {
 			GetComponent<TowerShooting>().enabled = true;
+			foreach (MeshRenderer meshRenderer in gameObject.GetComponentsInChildren<MeshRenderer> ())
+				meshRenderer.material.color = Color.white;
+
 			Resources.ChangeGoldAmount(-price);
 			Destroy(this);
 		}
@@ -47,7 +50,7 @@ public class TowerPlacement : MonoBehaviour {
 	void SetPlacementPossible (bool possible)
 	{
 		foreach (MeshRenderer meshRenderer in gameObject.GetComponentsInChildren<MeshRenderer> ())
-			meshRenderer.material.color = possible ? Color.white : Color.red;
+			meshRenderer.material.color = possible ? new Color(1f,1f,1f,0.5f) : new Color(0.7f, 0.1f, 0.4f, 0.5f);
 		placementPossible = possible;
 	}
 
