@@ -25,7 +25,7 @@ public class TowerShooting : MonoBehaviour {
 			target = FindClosestWithTag ("Enemy");
 		}
 		// TODO: should maybe start shooting immediately when enemy gets close enough, now only checks between shootInterval times
-		if (Vector3.Distance (transform.position, FindClosestWithTag ("Enemy").transform.position) < maxRange) {
+		if (target != null && Vector3.Distance (transform.position, FindClosestWithTag ("Enemy").transform.position) < maxRange) {
 			GameObject newBullet = Instantiate (bullet, shootingPosition.transform.position, Quaternion.identity) as GameObject;
 			newBullet.GetComponent<Projectile> ().target = target;
 		}
