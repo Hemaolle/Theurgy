@@ -521,7 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 111338, guid: b96690d1a8ef8784c96f77ad3e04d528, type: 2}
-  interval: 2
+  interval: 3
   path:
   - {fileID: 1538280794}
   - {fileID: 688313458}
