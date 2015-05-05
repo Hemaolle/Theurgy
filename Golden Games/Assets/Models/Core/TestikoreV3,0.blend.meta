@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: cc3745cf5accd134cae25e686e97b640
+timeCreated: 1430849750
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Ala_py_riv__keh_
+    100002: Kuoppa
+    100004: Maciq_mass
+    100006: Oikea_kristallli_1
+    100008: Oikea_kristallli_2
+    100010: Oikea_pit__kristalli
+    100012: Pitk__Vasen_kristalli
+    100014: //RootNode
+    100016: Vasen_kristallli_1
+    100018: Vasen_kristallli_2
+    100020: Yl__Kristalli
+    100022: Yl__py_riv__keh_
+    400000: Ala_py_riv__keh_
+    400002: Kuoppa
+    400004: Maciq_mass
+    400006: Oikea_kristallli_1
+    400008: Oikea_kristallli_2
+    400010: Oikea_pit__kristalli
+    400012: Pitk__Vasen_kristalli
+    400014: //RootNode
+    400016: Vasen_kristallli_1
+    400018: Vasen_kristallli_2
+    400020: Yl__Kristalli
+    400022: Yl__py_riv__keh_
+    2300000: Ala_py_riv__keh_
+    2300002: Kuoppa
+    2300004: Maciq_mass
+    2300006: Oikea_kristallli_1
+    2300008: Oikea_kristallli_2
+    2300010: Oikea_pit__kristalli
+    2300012: Pitk__Vasen_kristalli
+    2300014: Vasen_kristallli_1
+    2300016: Vasen_kristallli_2
+    2300018: Yl__Kristalli
+    2300020: Yl__py_riv__keh_
+    3300000: Ala_py_riv__keh_
+    3300002: Kuoppa
+    3300004: Maciq_mass
+    3300006: Oikea_kristallli_1
+    3300008: Oikea_kristallli_2
+    3300010: Oikea_pit__kristalli
+    3300012: Pitk__Vasen_kristalli
+    3300014: Vasen_kristallli_1
+    3300016: Vasen_kristallli_2
+    3300018: Yl__Kristalli
+    3300020: Yl__py_riv__keh_
+    4300000: Oikea_kristallli_2
+    4300002: Vasen_kristallli_2
+    4300004: Vasen_kristallli_1
+    4300006: Oikea_pit__kristalli
+    4300008: Oikea_kristallli_1
+    4300010: Yl__Kristalli
+    4300012: Pitk__Vasen_kristalli
+    4300014: Yl__py_riv__keh_
+    4300016: Ala_py_riv__keh_
+    4300018: Maciq_mass
+    4300020: Kuoppa
+    7400000: Default Take
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
