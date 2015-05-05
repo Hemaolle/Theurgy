@@ -40,7 +40,8 @@ public class Projectile : MonoBehaviour {
 
 	void OnTriggerEnter(Collider collider) {
 		Debug.Log (collider.name);
-		if (collider.tag == "Enemy") {
+
+		if (collider.tag == "Enemy" && collider.gameObject == target) {
 			collider.GetComponentInParent<EnemyHealth>().TakeDamage(damage);
 			Destroy (gameObject);
 		}

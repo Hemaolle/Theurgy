@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour {
 	public Slider healthSlider;
 	public int killPrice;
 	public GameObject floatingPriceNumber;
+	public GameObject enemyDeathParticle;
 	public float priceNumberStartingHeight = 0.2f;
 
 	float currentHealth;
@@ -27,10 +28,15 @@ public class EnemyHealth : MonoBehaviour {
 		currentHealth -= damage;
 		healthSlider.value = currentHealth / maxHealth;
 		if (currentHealth <= 0) {
-			Resources.ChangeGoldAmount(killPrice);
-			(Instantiate(floatingPriceNumber, transform.position + priceNumberStartingHeight * Vector3.up, Quaternion.identity) 
-			 	as GameObject).GetComponent<FloatingText>().text = "" + killPrice;
-			Destroy (gameObject);
+			Death();
 		}
+	}
+
+	protected virtual void Death() {
+		Resources.ChangeGoldAmount(killPrice);
+		Instantiate (enemyDeathParticle, transform.position, Quaternion.Euler(new Vector3(-90,0,0)));
+		(Instantiate(floatingPriceNumber, transform.position + priceNumberStartingHeight * Vector3.up, Quaternion.identity) 
+		 	as GameObject).GetComponent<FloatingText>().text = "" + killPrice;
+		Destroy (gameObject);
 	}
 }
