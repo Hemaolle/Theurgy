@@ -1093,7 +1093,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: .634677768, g: .948529422, b: .935542405, a: 1}
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: bfef1582b859575468d8cd150df6d1aa, type: 3}
     m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
@@ -1754,7 +1754,9 @@ MonoBehaviour:
   maxHealth: 10
   healthSlider: {fileID: 930176010}
   killPrice: 0
+  floatingPriceNumber: {fileID: 0}
   enemyDeathParticle: {fileID: 0}
+  priceNumberStartingHeight: .200000003
   gameOverScreen: {fileID: 880865621}
 --- !u!114 &930176010
 MonoBehaviour:

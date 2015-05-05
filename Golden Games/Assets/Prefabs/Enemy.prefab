@@ -346,7 +346,9 @@ MonoBehaviour:
   maxHealth: 10
   healthSlider: {fileID: 11467446}
   killPrice: 20
+  floatingPriceNumber: {fileID: 107276, guid: bca0348db49a35c43a61426af1a0b924, type: 2}
   enemyDeathParticle: {fileID: 108920, guid: 916b1939c2b67d14e88587e4bf8cedd9, type: 2}
+  priceNumberStartingHeight: .200000003
 --- !u!114 &11459952
 MonoBehaviour:
   m_ObjectHideFlags: 1
