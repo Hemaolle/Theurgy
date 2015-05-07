@@ -86,6 +86,37 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
     path: Pitk__Vasen_kristalli
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .000300000014, y: .0714568868, z: -.00139999995}
+        inSlope: {x: .00019999998, y: 0, z: .000499999966}
+        outSlope: {x: .00019999998, y: 0, z: .000499999966}
+        tangentMode: 0
+      - time: 2
+        value: {x: .000699999975, y: .117148243, z: -.00039999999}
+        inSlope: {x: -5.02514013e-07, y: .000646030181, z: -1.25626684e-06}
+        outSlope: {x: -5.02514013e-07, y: .000646030181, z: -1.25626684e-06}
+        tangentMode: 0
+      - time: 2.00999999
+        value: {x: .000699974888, y: .117151327, z: -.000400062796}
+        inSlope: {x: -4.51752248e-06, y: -2.97967345e-05, z: -1.12937887e-05}
+        outSlope: {x: -4.51752248e-06, y: -2.97967345e-05, z: -1.12937887e-05}
+        tangentMode: 0
+      - time: 3.99000001
+        value: {x: .000300000014, y: .071578607, z: -.00139999995}
+        inSlope: {x: -.000201005008, y: -.00135333871, z: -.000502512499}
+        outSlope: {x: -.000201005008, y: -.00135333871, z: -.000502512499}
+        tangentMode: 0
+      - time: 4.01000023
+        value: {x: .000300000014, y: .071565032, z: -.00139999995}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: Yl__Kristalli
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -109,6 +140,12 @@ AnimationClip:
       customType: 0
       isPPtrCurve: 0
     - path: 3088982806
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 493079201
       attribute: 1
       script: {fileID: 0}
       classID: 4
@@ -347,6 +384,78 @@ AnimationClip:
       m_PostInfinity: 2
     attribute: m_LocalPosition.z
     path: Pitk__Vasen_kristalli
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .000300000014
+        inSlope: .00019999998
+        outSlope: .00019999998
+        tangentMode: 10
+      - time: 2
+        value: .000699999975
+        inSlope: -5.02514013e-07
+        outSlope: -5.02514013e-07
+        tangentMode: 10
+      - time: 3.99000001
+        value: .000300000014
+        inSlope: -.000201005008
+        outSlope: -.000201005008
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.x
+    path: Yl__Kristalli
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: .0714568868
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      - time: 2.00999999
+        value: .117151327
+        inSlope: -2.97967345e-05
+        outSlope: -2.97967345e-05
+        tangentMode: 10
+      - time: 4.01000023
+        value: .071565032
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.y
+    path: Yl__Kristalli
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: -.00139999995
+        inSlope: .000499999966
+        outSlope: .000499999966
+        tangentMode: 10
+      - time: 2
+        value: -.00039999999
+        inSlope: -1.25626684e-06
+        outSlope: -1.25626684e-06
+        tangentMode: 10
+      - time: 3.99000001
+        value: -.00139999995
+        inSlope: -.000502512499
+        outSlope: -.000502512499
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    attribute: m_LocalPosition.z
+    path: Yl__Kristalli
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
