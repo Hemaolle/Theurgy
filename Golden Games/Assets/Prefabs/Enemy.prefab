@@ -343,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c4861d043400504488c914330ad93984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 15
   healthSlider: {fileID: 11467446}
   killPrice: 20
   floatingPriceNumber: {fileID: 107276, guid: bca0348db49a35c43a61426af1a0b924, type: 2}
